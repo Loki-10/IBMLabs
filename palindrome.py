@@ -1,5 +1,5 @@
 a=input()
 if(a==a[::-1]):
-    print("Amstrong")
+    print("palindrome")
 else:
-    print("Not Amstrong")
+    print("Not Palindrome")
