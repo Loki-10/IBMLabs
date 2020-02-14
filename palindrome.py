@@ -1,5 +1,2 @@
 a=input()
-if(a==a[::-1]):
-    print("palindrome")
-else:
-    print("Not Palindrome")
+print("Palindrome" if a==a[::-1] else "Not a Palindrome")
