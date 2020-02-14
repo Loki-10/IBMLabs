@@ -1,5 +1,11 @@
-a=int(input())
-if((a%4==0) and ((a%400==0) or (a%100==0))):
-    print("Leap Year")
+year=int(input())
+if (year % 4) == 0:
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print("Leap year")
+       else:
+           print("Not a Leap year")
+   else:
+       print("Leap year")
 else:
-    print("Not a Leap Year")
+   print("Not a Leap year")
