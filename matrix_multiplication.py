@@ -4,6 +4,7 @@ row2 = int(input("Rows of Second Matrix:"))
 col2 = int(input("Column of Second Matrix:"))
 A = []
 B = []
+result=[]
 for i in range(row1):
     a = []
     for j in range(col1):
@@ -14,9 +15,11 @@ for i in range(row2):
     for j in range(col2):
         a.append(int(input()))
     B.append(a)
-result = [[0, 0, 0, 0],
-          [0, 0, 0, 0],
-          [0, 0, 0, 0]]
+for i in range(row1):
+    a = []
+    for j in range(col2):
+        a.append(0)
+    result.append(a)
 for i in range(len(A)):
     for j in range(len(B[0])):
         for k in range(len(B)):
